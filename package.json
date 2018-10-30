@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "gia": "^1.0.0",
-    "swup": "^1.7.1"
+    "swup": "^1.7.3"
   },
   "devDependencies": {
     "stylus": "^0.54.5",
