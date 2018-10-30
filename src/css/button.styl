@@ -58,15 +58,12 @@
             box-shadow 0 14px 10px -10px rgba(#733DF9, .2)
 
     &--fade
-        opacity 0
-        animation fadeIn .3s 1s forwards
+        opacity 1
+        transition opacity .3s 1s
+
+        html.is-animating &
+            transition opacity .3s 0s
+            opacity 0
 
     &:active
         transform scale(.98)
-
-@keyframes fadeIn
-    0%
-        opacity 0
-
-    100%
-        opacity 1

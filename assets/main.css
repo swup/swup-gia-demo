@@ -174,43 +174,15 @@ html.is-animating .transition-fade {
   box-shadow: 0 14px 10px -10px rgba(115,61,249,0.2);
 }
 .button--fade {
+  opacity: 1;
+  transition: opacity 0.3s 1s;
+}
+html.is-animating .button--fade {
+  transition: opacity 0.3s 0s;
   opacity: 0;
-  animation: fadeIn 0.3s 1s forwards;
 }
 .button:active {
   transform: scale(0.98);
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .increment {
   display: block;
