@@ -1,0 +1,92 @@
+*
+    box-sizing border-box
+
+html
+    font-size 62.5%
+
+html, body
+    background #fff
+    margin 0 auto
+    width 100%
+    height 100%
+    font-family 'Source Sans Pro',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif
+    color #181818
+
+body
+    font-size 16px
+
+h1
+    font-size 30px
+    margin 0 auto 30px
+    padding 3px
+
+    @media (min-width 768px)
+        font-size 60px
+        margin 0 auto 40px
+
+p, main li
+    font-size 16px
+    color #181818
+    text-align left
+
+p, main ul
+    margin 0 auto 50px
+
+main ul
+    display block
+    padding 0
+    list-style-type none
+
+    li
+        display block
+        padding 0 0 0 20px
+        position relative
+        margin 0 0 20px
+
+        &:before
+            content ''
+            height 2px
+            width 10px
+            background #00A2FE
+            display block
+            position absolute
+            left 0
+            top 10px
+
+.u-color-blue
+    color #00A2FE !important
+
+.u-color-purple
+    color #733DF9 !important
+
+// text animations
+h1, p, li
+    span
+        display inline-block
+        overflow hidden
+        vertical-align middle
+
+        & > span
+            display block
+            animation slideUp 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) forwards
+            transform translate3d(0, 100%, 0)
+
+@keyframes slideUp
+    0%
+        transform translate3d(0, 100%, 0)
+
+    100%
+        transform translate3d(0, 0, 0)
+
+// main swup transition
+.transition-fade
+    transition .4s
+    opacity 1
+
+    html.is-animating &
+        opacity 0
+
+@import 'wrapper'
+@import 'button'
+@import 'increment'
+@import 'header'

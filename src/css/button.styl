@@ -1,0 +1,72 @@
+.button
+    display inline-block
+    text-transform uppercase
+    line-height 1.4
+    padding 16px 30px
+    border-radius 4px
+    text-decoration none
+    cursor pointer
+    text-align center
+    min-width 160px
+    font-weight 700
+    font-size 15px
+    margin 0 1px 10px
+
+    @media (min-width 768px)
+        margin 0 10px 10px
+
+    &--white
+        background #fff
+        border 1px solid #181818
+        color #181818
+        margin 0
+
+    &--blue
+        border 2px solid #00A2FE
+        background #00A2FE
+        color #fff
+        box-shadow 0 16px 10px -10px rgba(#00A2FE, .6)
+
+        &:active
+            box-shadow 0 14px 10px -10px rgba(#00A2FE, .6)
+
+    &--blue-border
+        border 2px solid #00A2FE
+        background #fff
+        color #00A2FE
+        box-shadow 0 16px 10px -10px rgba(#00A2FE, .2)
+
+        &:active
+            box-shadow 0 14px 10px -10px rgba(#00A2FE, .2)
+
+    &--purple
+        border 2px solid #733DF9
+        background #733DF9
+        color #fff
+        box-shadow 0 16px 10px -10px rgba(#733DF9, .6)
+
+        &:active
+            box-shadow 0 14px 10px -10px rgba(#733DF9, .6)
+
+    &--purple-border
+        border 2px solid #733DF9
+        background #fff
+        color #733DF9
+        box-shadow 0 16px 10px -10px rgba(#733DF9, .2)
+
+        &:active
+            box-shadow 0 14px 10px -10px rgba(#733DF9, .2)
+
+    &--fade
+        opacity 0
+        animation fadeIn .3s 1s forwards
+
+    &:active
+        transform scale(.98)
+
+@keyframes fadeIn
+    0%
+        opacity 0
+
+    100%
+        opacity 1
