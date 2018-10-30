@@ -17,7 +17,7 @@ body
 
 h1
     font-size 30px
-    margin 0 auto 30px
+    margin 0 auto 20px
     padding 3px
 
     @media (min-width 768px)
@@ -30,7 +30,10 @@ p, main li
     text-align left
 
 p, main ul
-    margin 0 auto 50px
+    margin 0 auto 30px
+
+    @media (min-width 768px)
+        margin 0 auto 50px
 
 main ul
     display block
@@ -41,7 +44,10 @@ main ul
         display block
         padding 0 0 0 20px
         position relative
-        margin 0 0 20px
+        margin 0 0 10px
+
+        @media (min-width 768px)
+            margin 0 0 20px
 
         &:before
             content ''
