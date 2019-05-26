@@ -14,6 +14,7 @@
     "url": "https://github.com/gmrchk/swup.git"
   },
   "dependencies": {
+    "@swup/debug-plugin": "^1.0.2",
     "gia": "^1.0.0",
     "swup": "^2.0.2"
   },
