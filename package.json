@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "stylus": "^0.54.5",
-    "webpack": "^5.91.0",
+    "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4"
   }
 }
